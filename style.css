@@ -1,0 +1,97 @@
+@font-face {
+    font-family: 'shrikhand';
+    src: url('Polices/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-thin';
+    src: url('Polices/Roboto/Roboto-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto';
+    src: url('Polices/Roboto/Roboto-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'roboto-medium';
+    src: url('Polices/Roboto/Roboto-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media screen and (max-width: 767px) {
+
+    html, body {
+        margin: 0;
+    }
+    header {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        width: 45%;
+    }
+
+    form {
+        display: flex;
+        background-color: lightgrey;
+        height: 40px;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: stretch;
+        justify-content: center;
+        color: black;
+    }
+
+    input[type=search] {
+        background-color: rgb(220, 220, 220);
+        border: none;
+        -webkit-appearance: none;
+    }
+    .reservations {
+        background-color: rgb(240, 238, 238);
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h1 {
+        font-family: "roboto-medium";
+        width: 50%;
+        display: contents;
+    }
+
+    p {
+        font-family: "roboto-thin";
+        width: 65%;
+        font-size: large;
+    }
+
+    .reservations a {
+        padding: 1.2rem;
+        font-family: "roboto-medium";
+        background: linear-gradient(#FF79DA, #9356DC);
+        cursor: pointer;
+        border-radius: 100rem;
+        font-size: 1.2rem;
+        color: #fff;
+        box-shadow: 5px 5px 5px lightgray;
+        text-decoration: none;
+    }
+}
