@@ -1,137 +1,116 @@
-@font-face {
-    font-family: 'shrikhand';
-    src: url('Polices/Shrikhand/Shrikhand-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+@import url('https://necolas.github.io/normalize.css/?utm_medium=email&utm_content=nov-18-has-completed-mentoring-session-student&bsft_clkid=a2b5a36e-ff6a-487a-8942-80d06d5a6907&bsft_uid=e6f2f2e5-06aa-4cdb-a3a5-0b72d8c52520&bsft_mid=22f3724d-e03c-4e3d-9bb4-7b80caf39983&bsft_eid=7244055d-47f0-a6f2-c394-7a20ebb3a726&bsft_txnid=3640c632-ff43-402e-a7c9-6d59ed977e05&bsft_mime_type=html&bsft_ek=2022-09-12T13%3A07%3A19Z&bsft_aaid=a265d396-7432-4eb2-9c9a-ba5eea75629e&bsft_tv=10');
+
+
+
+html,
+body {
+  margin: 0;
 }
 
-@font-face {
-    font-family: 'roboto-thin';
-    src: url('Polices/Roboto/Roboto-Thin.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 
-@font-face {
-    font-family: 'roboto';
-    src: url('Polices/Roboto/Roboto-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.logo {
+  width: 45%;
 }
 
-@font-face {
-    font-family: 'roboto-medium';
-    src: url('Polices/Roboto/Roboto-Medium.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+form {
+  display: flex;
+  background-color: lightgrey;
+  height: 40px;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  justify-content: center;
+  color: black;
 }
 
-@media screen and (max-width: 767px) {
+input[type=search] {
+  background-color: rgb(220, 220, 220);
+  border: none;
+  -webkit-appearance: none;
+}
+.reservations {
+  background-color: rgb(240, 238, 238);
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
-    html, body {
-        margin: 0;
-    }
-    header {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-around;
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+h1 {
+  font-family: Shrikhand sans-serif;
+  width: 50%;
+  display: flex;
+  align-items: normal;
+}
 
-    .logo {
-        width: 45%;
-    }
+p {
+  font-family: Roboto sans-serif;
+  width: 65%;
+  font-size: large;
+}
 
-    form {
-        display: flex;
-        background-color: lightgrey;
-        height: 40px;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: stretch;
-        justify-content: center;
-        color: black;
-    }
+.reservations a {
+  padding: 20px;
+  font-family: Roboto sans-serif;
+  background: linear-gradient(#FF79DA, #9356DC);
+  cursor: pointer;
+  border-radius: 35px;
+  font-size: 1.2rem;
+  color: #fff;
+  box-shadow: 5px 5px 5px lightgray;
+  text-decoration: none;
+}
 
-    input[type=search] {
-        background-color: rgb(220, 220, 220);
-        border: none;
-        -webkit-appearance: none;
-    }
-    .reservations {
-        background-color: rgb(240, 238, 238);
-        padding-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-content: space-around;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    h1 {
-        font-family: "roboto-medium";
-        width: 50%;
-        display: flex;
-        align-items: normal;
-    }
+h2 {
+  padding-left: 20px;
+  display: flex;
+  font-family: Roboto sans-serif;
+  justify-content: flex-start;
+  align-content: space-around;
+  align-items: center;
+}
 
-    p {
-        font-family: "roboto-thin";
-        width: 65%;
-        font-size: large;
-    }
+section ul {
+  list-style: none;
+}
 
-    .reservations a {
-        padding: 1.2rem;
-        font-family: "roboto-medium";
-        background: linear-gradient(#FF79DA, #9356DC);
-        cursor: pointer;
-        border-radius: 100rem;
-        font-size: 1.2rem;
-        color: #fff;
-        box-shadow: 5px 5px 5px lightgray;
-        text-decoration: none;
-    }
+section li {
+  width: 95%;
+  height: 55px;
+  border-radius: 15px 15px 15px 15px;
+  margin: inherit;
+  box-shadow: 1px 1px 1px lightgrey;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-evenly;
+  align-items: center;
+}
 
-    h2 {
-        padding-left: 20px;
-        display: flex;
-        font-family: "roboto-medium";
-        justify-content: flex-start;
-        align-content: space-around;
-        align-items: center;
-    }
+span {
+  font-family: Roboto sans-serif;
+}
 
-    section ul {
-        list-style: none;
-    }
-
-    section li {
-        width: 95%;
-        height: 55px;
-        border-radius: 15px 15px 15px 15px;
-        margin: inherit;
-        box-shadow: 1px 1px 1px lightgrey;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: space-around;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    span {
-        font-family: "roboto-medium";
-    }
-
-    label {
-        display: flex;
-        background: #99E2D0;
-        width: 35%;
-        height: 50px;
-        border-radius: 10px 10px 10px 10px;
-    }
+label {
+  display: flex;
+  background: #99E2D0;
+  font-family: "roboto-medium";
+  color: rgb(153, 226, 208);
+  width: 35%;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
 }
