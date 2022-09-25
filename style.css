@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
-@import url('https://necolas.github.io/normalize.css/?utm_medium=email&utm_content=nov-18-has-completed-mentoring-session-student&bsft_clkid=a2b5a36e-ff6a-487a-8942-80d06d5a6907&bsft_uid=e6f2f2e5-06aa-4cdb-a3a5-0b72d8c52520&bsft_mid=22f3724d-e03c-4e3d-9bb4-7b80caf39983&bsft_eid=7244055d-47f0-a6f2-c394-7a20ebb3a726&bsft_txnid=3640c632-ff43-402e-a7c9-6d59ed977e05&bsft_mime_type=html&bsft_ek=2022-09-12T13%3A07%3A19Z&bsft_aaid=a265d396-7432-4eb2-9c9a-ba5eea75629e&bsft_tv=10');
+@import url('https://necolas.github.io/normalize.css/');
 
 html,
 body {
@@ -17,53 +17,18 @@ body {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
   align-content: center;
   flex-direction: column;
-  width: 80%;
   height: 60px;
-  flex-wrap: wrap;
-}
-
-form {
-  display: flex;
-  background-color: #e5dddd;
-  height: 40px;
-  flex-wrap: wrap;
-  align-content: center;
-  align-items: stretch;
-  justify-content: center;
-  color: black;
-  width: 100%;
-}
-
-.reservations {
-  background-color: rgb(240, 238, 238);
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  align-content: space-around;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  flex-direction: column;
 }
 
 main {
   display: flex;
   flex-direction: column;
-}
-
-#restaurants {
-  display: flex;
+  background:rgb(240, 238, 238);
 }
 
 footer {
@@ -74,10 +39,57 @@ footer {
   opacity: 85%;
 }
 
+footer a {
+  color: white;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  align-items: stretch;
+  justify-content: center;
+  width: 100%;
+  height: 40px;
+  color: black;
+  background-color: #e5dddd;
+}
+
+.reservations {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 238, 238);
+  padding-bottom: 50px;
+}
+
+#restaurants {
+  display: flex;
+}
+
 footer h1 {
   color: white;
   border: 1px black;
   margin-left: 20px;
+}
+
+footer h3 {
+  color: white;
+  font-family: Shrikhand, sans-serif;
+  font-weight: bolder;
 }
 
 footer ul {
@@ -91,12 +103,6 @@ footer ul {
   margin-top: -5px;
 }
 
-footer a {
-  color: white;
-  margin-right: 20px;
-  text-decoration: none;
-}
-
 a {
   text-decoration: none;
 }
@@ -106,20 +112,16 @@ h1 {
   align-items: normal;
   font-family: Shrikhand, sans-serif;
   font-weight: bolder;
-  margin-left: 25%;
 }
 
 h2 {
   display: flex;
-  font-weight: bold;
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: space-around;
-  justify-content: center;
+  flex-flow: column wrap;
+  place-content: space-around center;
   align-items: stretch;
+  text-align: center;
   font-family: Roboto, sans-serif;
-  width: 75%;
-  margin-left: 60px;
+  font-weight: bold ;
 }
 
 h3 {
@@ -132,13 +134,13 @@ h3 {
 
 h4 {
   display: flex;
-  font-family: Roboto, sans-serif;
-  font-weight: bold;
-  margin-right: 128px;
   flex-direction: row-reverse;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-right: 128px;
+  font-family: Roboto, sans-serif;
+  font-weight: bold;
 }
 
 p {
@@ -149,13 +151,11 @@ p {
   justify-content: space-around;
   align-items: stretch;
   font-family: Roboto, sans-serif;
-  width: 75%;
   font-weight: lighter;
-  margin-left: 60px;
+  text-align: center;
 }
 
 span {
-  display: flex;
   font-family: Roboto, sans-serif;
   font-weight: bolder;
   color: black;
@@ -171,13 +171,13 @@ input[type=search] {
 
 .reservations a {
   padding: 20px;
-  font-family: Roboto, sans-serif;
+  box-shadow: 5px 5px 5px lightgray;
   background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
   cursor: pointer;
   border-radius: 35px;
   font-size: 1.2rem;
-  color: #fff;
-  box-shadow: 5px 5px 5px lightgray;
+  font-family: Roboto, sans-serif;
   text-decoration: none;
 }
 
@@ -186,23 +186,21 @@ section ul {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: flex-start;
-  justify-content: space-around;
-  width: 65%;
+  place-content: space-around;
   list-style: none;
+  width: 90%;
 }
 
 section li {
-  width: 135%;
-  height: 55px;
-  border-radius: 15px 15px 15px 15px;
-  margin: inherit;
-  box-shadow: 1px 1px 1px lightgrey;
   display: flex;
   flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-evenly;
   align-items: center;
+  place-content: space-evenly;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 1px 1px 1px lightgrey;
+  margin: inherit;
+  width: 100%;
+  height: 70px;
 }
 
 
@@ -213,16 +211,17 @@ section li:hover {
 
 label {
   display: inherit;
-  background: #99E2D0;
-  font-family: Roboto sans-serif;
-  color: #5d8a7f;
-  width: 30%;
-  height: 35px;
   border-radius: 3px 3px 3px 3px;
   align-content: space-around;
   justify-content: space-evenly;
   align-items: center;
   margin-top: -235px;
+  margin-left: 65%;
+  width: 30%;
+  height: 35px;
+  font-family: Roboto sans-serif;
+  background: #99E2D0;
+  color: #5d8a7f;
 }
 
 .fa-regular {
@@ -243,7 +242,7 @@ img {
   display: flex;
   object-fit: cover;
   border: white 1px solid;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 0px 0px;
   width: 105%;
   height: 250px;
 }
@@ -252,9 +251,20 @@ figcaption {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-around;
-  justify-content: space-around;
-  align-items: flex-end;
+  align-content: flex-start;
   border: white 1px solid;
-  border-radius: 30px 0px 0px 30px;
+  border-radius: 0px 0px 25px 25px;
+  background: white;
+}
+
+.numbers {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #9356DC;
+  width: 6%;
+  height: 25px;
+  color: white;
+  font-family:'Roboto';
 }
