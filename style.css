@@ -80,12 +80,6 @@ form {
   display: flex;
 }
 
-footer h1 {
-  color: white;
-  border: 1px black;
-  margin-left: 20px;
-}
-
 footer h3 {
   color: white;
   font-family: Shrikhand, sans-serif;
@@ -211,12 +205,12 @@ section li:hover {
 
 label {
   display: inherit;
+  position: absolute;
   border-radius: 3px 3px 3px 3px;
-  align-content: space-around;
-  justify-content: space-evenly;
   align-items: center;
-  margin-top: -235px;
-  margin-left: 65%;
+  place-content: space-around;
+  top: 20px;
+  right: 20px;
   width: 30%;
   height: 35px;
   font-family: Roboto sans-serif;
@@ -231,6 +225,7 @@ label {
 
 figure {
   display: flex;
+  position: relative;
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
@@ -243,7 +238,7 @@ img {
   object-fit: cover;
   border: white 1px solid;
   border-radius: 30px 30px 0px 0px;
-  width: 105%;
+  width: 100%;
   height: 250px;
 }
 
@@ -257,14 +252,19 @@ figcaption {
   background: white;
 }
 
-.numbers {
-  display: flex;
+.fa-li {
+  position: absolute;
+  display: inherit;
   place-content: center;
   align-items: center;
   border-radius: 50px;
   background: #9356DC;
-  width: 6%;
-  height: 25px;
+  margin: 20px;
+  right: -20px;
+  height: 30px;
   color: white;
-  font-family:'Roboto';
+  font-family: 'Roboto';
+}
+.fa-ul>li {
+  position: relative;
 }
