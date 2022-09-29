@@ -93,7 +93,7 @@ footer ul {
   justify-content: space-around;
   align-items: flex-start;
   list-style: none;
-  margin-left: -20px;
+  margin-left: 10px;
   margin-top: -5px;
 }
 
@@ -131,6 +131,7 @@ h4 {
   padding-top: 5px;
   font-family: Roboto, sans-serif;
   font-weight: bold;
+  color: black;
 }
 
 p {
@@ -143,6 +144,7 @@ p {
   font-family: Roboto, sans-serif;
   font-weight: lighter;
   text-align: center;
+  color: black;
 }
 
 span {
@@ -157,6 +159,10 @@ input[type=search] {
   -webkit-appearance: none;
   margin-right: -25px;
   padding-left: 25px;
+}
+
+input:focus-visible {
+  outline: none;
 }
 
 .reservations a {
@@ -280,4 +286,26 @@ figcaption {
 position: absolute;
 right: 30px;
 bottom: 45px;
+color: black;
+font-weight: lighter;
+}
+
+.fa-regular.fa-heart:hover {
+  font-weight: 900;
+  color: #FF79DA;
+}
+.fa-regular.fa-heart:active {
+  font-weight: 900;
+}
+
+button {
+  padding: 20px;
+  margin: 20%;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: #fff;
+  cursor: pointer;
+  border-radius: 35px;
+  font-size: 1.2rem;
+  font-family: Roboto, sans-serif;
+  width: 60%;
 }
