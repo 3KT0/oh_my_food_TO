@@ -121,18 +121,14 @@ h2 {
 h3 {
   display: flex;
   align-items: center;
-  margin-left: 5%;
+  margin-left: 10%;
   font-family: Roboto, sans-serif;
   font-weight: bold;
 }
 
 h4 {
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-  margin-right: 128px;
+  margin: auto;
+  padding-top: 5px;
   font-family: Roboto, sans-serif;
   font-weight: bold;
 }
@@ -182,7 +178,7 @@ section ul {
   flex-wrap: wrap;
   place-content: space-around;
   list-style: none;
-  width: 90%;
+  width: 85%;
 }
 
 section li {
@@ -203,7 +199,7 @@ section li:hover {
   color: #9356DC;
 }
 
-label {
+.label {
   display: inherit;
   position: absolute;
   border-radius: 3px 3px 3px 3px;
@@ -216,11 +212,6 @@ label {
   font-family: Roboto sans-serif;
   background: #99E2D0;
   color: #5d8a7f;
-}
-
-.fa-regular {
-  font-weight: 900;
-  margin-left: -15px;
 }
 
 figure {
@@ -238,6 +229,7 @@ img {
   object-fit: cover;
   border: white 1px solid;
   border-radius: 30px 30px 0px 0px;
+  box-shadow: 2px 2px 2px 2px darkgrey;
   width: 100%;
   height: 250px;
 }
@@ -247,8 +239,10 @@ figcaption {
   flex-direction: column;
   flex-wrap: wrap;
   align-content: flex-start;
+  padding-left: 10px;
   border: white 1px solid;
   border-radius: 0px 0px 25px 25px;
+  box-shadow: 2px 2px 2px 2px darkgrey;
   background: white;
 }
 
@@ -265,6 +259,25 @@ figcaption {
   color: white;
   font-family: 'Roboto';
 }
+
+.fa-solid {
+  margin-right: 10px;
+}
+
+.fa-solid.fa-mobile-screen-button{
+  margin: unset;
+}
+
+.fa-ul {
+  margin-left: var(--fa-li-margin,2em);
+}
+
 .fa-ul>li {
   position: relative;
+}
+
+.fa-regular.fa-heart {
+position: absolute;
+right: 30px;
+bottom: 45px;
 }
