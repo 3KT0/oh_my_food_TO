@@ -344,6 +344,10 @@ b {
   animation: menu 1s linear 0ms 1;
 }
 
+.animation {
+  display: none;
+}
+
 .animation:hover {
   transform: rotate(360deg);
   transition: all 1.5s;
