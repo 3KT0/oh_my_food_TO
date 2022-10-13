@@ -2,6 +2,19 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
 @import url('https://necolas.github.io/normalize.css/');
 
+@keyframes appear {
+  0% {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 0;
+  }
+100% {
+  -webkit-transform: translateY(-15%);
+  transform: translateY(-15%);
+  opacity: 1;
+  }
+}
+
 html,
 body {
   margin: 0;
@@ -60,6 +73,10 @@ form {
   align-items: center;
   background-color: rgb(240, 238, 238);
   padding-bottom: 50px;
+}
+
+.reservations h2 {
+  display: flex;
 }
 
 footer h3 {
@@ -161,6 +178,11 @@ input:focus-visible {
   font-family: Roboto, sans-serif;
 }
 
+.reservations a:hover {
+  opacity: 80%;
+  transition: all 1s ease-out
+}
+
 .reservations p {
   text-align: center;
 }
@@ -185,6 +207,7 @@ section ul {
 
 .index-li:hover {
   color: #9356DC;
+  transition: all 1s ease-out
 }
 
 section li {
@@ -198,6 +221,27 @@ section li {
 
 section li:hover {
   background-color: #f3ebff;
+}
+
+.animation {
+  animation: appear 1s forwards;
+  opacity: 0;
+}
+
+.animation-1 {
+  animation-delay: 0.2s;
+}
+
+.animation-2 {
+  animation-delay: 0.4s;
+}
+
+.animation-3{
+  animation-delay: 0.6s;
+}
+
+.animation-4 {
+  animation-delay: 0.8s;
 }
 
 .item-container {
@@ -299,6 +343,7 @@ transition: all 444ms;
 .fa-regular.fa-heart:hover {
   font-weight: 900;
   color: #FF79DA;
+  transition: all 1s ease-out
 }
 .fa-regular.fa-heart:active {
   font-weight: 900;
@@ -309,7 +354,6 @@ transition: all 444ms;
   flex-direction: column;
   background: white;
 }
-
 
 button {
   padding: 20px;
@@ -327,6 +371,7 @@ button {
 
 button:hover {
   opacity: 80%;
+  transition: all 1s ease-out
 }
 
 .fig-menus {
@@ -368,7 +413,7 @@ header {
 }
 
 .menus li:hover {
-  transform: scale(1.1);
+  transform: scale(1);
   transition: all 444ms;
   background-color: white;
 } 
@@ -377,12 +422,12 @@ header {
 .fa-circle-check {
   color: white;
   transform: rotate(360deg);
-  transition: all 1.5s;
+  transition: transform 1.5s;
 }
 
 .menus li:hover
 .item-container {
-  width: 80%;
+  width: calc(100% - 80px);
   transition: all 444ms;
   border-radius: 15px 0px 0px 15px;
 }
@@ -391,7 +436,6 @@ header {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  transition: all 1s;
 }
 
 .background-container {
