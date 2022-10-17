@@ -409,7 +409,7 @@ header {
 }
 
 .menus li {
-  box-shadow: 0px 0px 10px 0px;
+  box-shadow: 0px 5px 20px -10px;
 }
 
 .menus li:hover {
@@ -418,15 +418,13 @@ header {
   background-color: white;
 } 
 
-.menus li:hover
-.fa-circle-check {
+.menus li:hover .fa-circle-check {
   color: white;
   transform: rotate(360deg);
   transition: transform 1.5s;
 }
 
-.menus li:hover
-.item-container {
+.menus li:hover .item-container {
   width: calc(100% - 80px);
   transition: all 444ms;
   border-radius: 15px 0px 0px 15px;
@@ -496,8 +494,7 @@ header {
     opacity: 85%;
 }
 
-  footer,
-  a {
+  footer a {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
