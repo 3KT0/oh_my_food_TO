@@ -580,7 +580,6 @@ article header {
   flex-wrap: wrap;
   align-content: flex-start;
   align-items: flex-start;
-  width: 100%;
   }
 
   .fa-ul>li {
