@@ -530,7 +530,6 @@ article header {
     width: 50%;
   }
 
-
   a {
     display: flex;
     flex-direction: column;
@@ -566,6 +565,10 @@ article header {
     justify-content: center;
     align-items: center;
   }
+
+  article {
+    width: 100%;
+    }
 }
 
 @media (min-width: 1200px) {
