@@ -154,6 +154,7 @@ p {
 
 b {
   margin-right: 40px;
+  font-family: Roboto, sans-serif;
 }
 
 span {
@@ -294,7 +295,7 @@ section li:focus {
   right: 20px;
   width: 30%;
   height: 35px;
-  font-family: Roboto sans-serif;
+  font-family: Roboto, sans-serif;
   background: var(--tertiary);
   color: var(--othergreen);
 }
@@ -339,7 +340,7 @@ figcaption {
   right: -20px;
   height: 30px;
   color: white;
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
 }
 
 .fa-solid {
@@ -390,15 +391,17 @@ transition: all 444ms;
 
 button {
   padding: 20px;
-  margin: 20%;
-  background: linear-gradient(var(--primary), var(--secondary));
+  margin-left: 25%;
+  margin-bottom: 14%;
+  background: linear-gradient(175deg,var(--secondary), var(--primary));
   color: #fff;
   cursor: pointer;
   border-radius: 35px;
   font-size: 1.2rem;
   font-family: Roboto, sans-serif;
-  width: 60%;
-  margin-top: 20px;
+  width: 50%;
+  box-shadow: 3px 3px 20px -9px black;
+  margin-top: 5%;
   border: none;
 }
 
@@ -546,6 +549,11 @@ article header {
     margin-left: 0;
   }
 
+  button {
+    width: 25%;
+    margin-left: 40%;
+  }
+
   footer {
     background-color: black;
     opacity: 85%;
@@ -581,10 +589,9 @@ article header {
 
 @media (min-width: 1200px) {
 
-
   .fa-ul>li {
-    position: relative;
     box-shadow: 1px 1px 5px -3px;
+    margin-left: -15%;
     width: 30%;
   }
   
@@ -596,15 +603,6 @@ article header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-
-  main {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
   }
 
   h3 {
@@ -619,8 +617,13 @@ article header {
   }
 
   .title {
-    margin-left: -5%;
-    margin-right: 5%
+    margin-left: 5px;
+    width: 10%;
+  }
+
+  .conteneur {
+    display: flex;
+    flex-direction: row;
   }
 
   figure {
@@ -630,11 +633,24 @@ article header {
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-around;
-    width: 300px;
+    width: 280px;
+  }
+
+  section ul {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 30px;
+  }
+  .green-line {
+    position: sticky;
+    display: flex;
+    align-items: flex-start;
+    margin-left: 1%;
   }
 
   .img {
-    margin-top: 5%;
+    width: 25%;
   }
 
   a {
@@ -649,4 +665,3 @@ article header {
     position: inherit;
   }
 }
-
