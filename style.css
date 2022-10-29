@@ -15,6 +15,78 @@
   }
 }
 
+@-webkit-keyframes circle-jump {
+  0% {
+      -webkit-transform: translateY(0);
+      transform:translateY(0)
+  }
+
+  100% {
+      -webkit-transform: translateY(15px);
+      transform:translateY(15px)
+  }
+}
+
+@keyframes circle-jump {
+  0% {
+      -webkit-transform: translateY(0);
+      transform:translateY(0)
+  }
+
+  100% {
+      -webkit-transform: translateY(15px);
+      transform:translateY(15px)
+  }
+}
+
+@-webkit-keyframes end-loader {
+  0% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      opacity:1
+  }
+
+  100% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      opacity:0
+  }
+}
+
+@keyframes end-loader {
+  0% {
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1);
+      opacity:1
+  }
+
+  100% {
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      opacity:0
+  }
+}
+
+@-webkit-keyframes no-scroll {
+  0% {
+      overflow-y:hidden
+  }
+
+  100% {
+      overflow-y:auto
+  }
+}
+
+@keyframes no-scroll {
+  0% {
+      overflow-y:hidden
+  }
+
+  100% {
+      overflow-y:auto
+  }
+}
+
 :root {
   --primary: #9356DC;
   --secondary: #FF79DA;
@@ -250,6 +322,54 @@ section li:hover {
 
 section li:focus {
   background-color: #f3ebff;
+}
+
+.block-scroll-loader {
+  animation: no-scroll 5s ease-in-out;
+  animation-duration: 5s;
+}
+
+.loader {
+  position: fixed;
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: center;
+  top: 10%;
+  z-index: 999;
+  height: 120%;
+  width: 100%;
+  background-color: #fff;
+  animation: end-loader .3s forwards;
+  animation-delay: 2.5s;
+}
+
+.loader__circle {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 15px;
+  height: 15px;
+  margin: 5px;
+  margin-bottom: 50%;
+  border-radius: 50%;
+  background: var(--primary);
+}
+
+.loader--circle-1 {
+  animation: circle-jump .5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+}
+
+.loader--circle-2 {
+  left: 20px;
+  animation: circle-jump .5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+  animation-delay: 0.2s;
+}
+
+.loader--circle-3 {
+  left: 40px;
+  animation: circle-jump .5s cubic-bezier(0.77, 0.47, 0.64, 0.28) alternate infinite;
+  animation-delay: 0.4s;
 }
 
 .animation {
